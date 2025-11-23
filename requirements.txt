@@ -1,0 +1,6 @@
+tensorflow ==2.19.0
+keras 
+numpy 
+flask 
+scikit-learn 
+pillow

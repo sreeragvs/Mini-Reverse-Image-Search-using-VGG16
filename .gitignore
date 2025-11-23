@@ -1,0 +1,15 @@
+# Ignore virtual environment
+venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# Numpy data files (optional if big)
+*.npy
+
+# Environment files
+.env

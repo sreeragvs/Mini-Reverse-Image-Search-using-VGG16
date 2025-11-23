@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search Results</title>
+</head>
+<body style="font-family:Arial">
+
+<h2>Search Results</h2>
+
+<h4>Your uploaded image:</h4>
+<img src="{{ query_image }}" width="300">
+
+<hr>
+
+<h3>Top 5 Similar Images</h3>
+
+{% for path, sim in results %}
+    <div style="margin-bottom: 20px;">
+        <img src="{{ path }}" width="250">
+        <p>Similarity Score: {{ "%.3f" | format(sim) }}</p>
+    </div>
+{% endfor %}
+
+</body>
+</html>
